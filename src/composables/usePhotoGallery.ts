@@ -4,16 +4,24 @@ import { Filesystem, Directory } from '@capacitor/filesystem';
 import { Preferences } from '@capacitor/preferences';
 
 export const usePhotoGallery = () => {
+    const photos = ref<UserPhoto[]>([]);
     const takePhoto = async () => {
       const photo = await Camera.getPhoto({
         resultType: CameraResultType.Uri,
         source: CameraSource.Camera,
         quality: 100,
+        
       });
     };
   
     return {
-      takePhoto,
-    };
+        photos,
+        takePhoto,
+      };
+      
   };
+  export interface UserPhoto {
+    filepath: string;
+    webviewPath?: string;
+  }
   
