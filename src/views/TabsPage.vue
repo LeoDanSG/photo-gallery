@@ -8,9 +8,9 @@
           <ion-label>Tab 1</ion-label>
         </ion-tab-button>
 
-        <ion-tab-button tab="tab2" href="/tabs/tab2">
-          <ion-icon aria-hidden="true" :icon="images" />
-          <ion-label>Photos</ion-label>
+       <ion-tab-button tab="tab2" href="/tabs/tab2">
+         <ion-icon :icon="images" />
+         <ion-label>Photos</ion-label>
         </ion-tab-button>
 
         <ion-tab-button tab="tab3" href="/tabs/tab3">
