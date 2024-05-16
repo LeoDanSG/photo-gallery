@@ -12,7 +12,7 @@
         </ion-toolbar>
       </ion-header>
 
-      <ExploreContainer name="Tab 1 page" />
+      <ExploreContainer name="PROYECTO FINAL DADM TECNM/ITGAM" />
     </ion-content>
   </ion-page>
 </template>
